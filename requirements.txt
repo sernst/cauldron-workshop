@@ -1,1 +1,2 @@
 cauldron-notebook
+plotly
