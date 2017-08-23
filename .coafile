@@ -1,0 +1,27 @@
+[all]
+files = **/*.py
+non_interactive = True
+max_line_length = 80
+use_spaces = True
+
+[all.complexity]
+bears = RadonBear
+
+[all.line_count]
+bears = LineCountBear
+max_lines_per_file = 150
+
+[rst]
+files = *.rst
+bears = RSTcheckBear
+
+[markdown]
+files = *.md
+bears = MarkdownBear
+
+[all.documentation]
+bears = PyDocStyleBear
+pydocstyle_ignore = D100,D104,D200,D202,D203,D205,D212,D400,D401
+
+[all.style]
+bears = PyFlakesBear,PEP8Bear

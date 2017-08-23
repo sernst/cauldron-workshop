@@ -1,0 +1,12 @@
+{
+  "author": "",
+  "id": "workshop-example",
+  "name": "workshop-example",
+  "naming_scheme": "S{{##}}-{{name}}.{{ext}}",
+  "steps": [
+    "S01.py",
+    "S02-More-Detail.py"
+  ],
+  "summary": "",
+  "title": "workshop-example"
+}

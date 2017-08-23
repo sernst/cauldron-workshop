@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.6"
+
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+  - pip install pytest pytest-cov pytest-runner
+  - pip install codecov
+
+# command to run tests
+script: py.test --cov-report=html:$(pwd)/html --cov-report=term --cov=$(pwd) $(pwd)
+
+# After the tests have run
+after_success:
+    - codecov
